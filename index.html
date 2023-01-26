@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
     <title>To do List</title>
 </head>
+
 <body>
-    
-<main>
-    <h1 id="title">To Do List</h1>
-    <!-- add to do form -->
-    <form id="add-todo">
-    <input type="text" id="entered-todo" placeholder="Add a task">
-    <button><span class="material-symbols-outlined">
-        add_circle
-        </span></button>
-    </form>
-<!-- Todos List -->
-    <section id="todos-list">
-        <h2>Tasks</h2>
-        <!-- single todo -->
-        <div class="card">
-            <div>
-                <input type="checkbox">
-                <span>Walk the dog</span>
+
+    <main>
+        <h1 id="title">To Do List</h1>
+        <!-- add to do form -->
+        <form id="add-todo">
+            <input type="text" id="entered-todo" placeholder="Add a task">
+            <button id="add-btn">
+                <span class="material-symbols-outlined add-icon">add_circle</span>
+            </button>
+        </form>
+        <!-- Todos List -->
+        <section id="todos-list">
+            <h2>Tasks</h2>
+            <!-- single todo -->
+            <div class="card">
+                <div>
+                    <input type="checkbox">
+                    <span>Walk the dog</span>
+                </div>
+
+                <button id="delete-btn">
+                <span class="material-symbols-outlined delete-icon">
+                    delete_forever
+                    </span>
+                </button>
             </div>
-            <button> X </button>
-        </div>
-    </section>
-    
-    <section id="stats">
-        <h3 class="count">
-            <span> 0 </span> out of 
-            <span> 0 </span> tasks completed
-        </h3>
-    </section>
-</main>
+
+            <div class="card">
+                <div>
+                    <input type="checkbox">
+                    <span>Walk the dog</span>
+                </div>
+
+                <button id="delete-btn">
+                <span class="material-symbols-outlined delete-icon">
+                    delete_forever
+                    </span>
+                </button>
+            </div>
+            
+        </section>
+
+        <section id="stats">
+            <h3 class="count">
+                <span class="first"> 0 </span> out of
+                <span class="second"> 0 </span> tasks completed
+            </h3>
+        </section>
+    </main>
 
 </body>
+
 </html>

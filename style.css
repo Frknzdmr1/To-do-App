@@ -53,15 +53,18 @@ form button{
     border: none;
 } 
 
-span.material-symbols-outlined{
+span.add-icon{
     font-size:30px;
-    color: green;
-    background-color:#c4e7ed;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
+    color: rgb(27, 168, 27);
     align-items: center;
+    background-color:#d0edef;
     cursor:pointer;
-    padding-left:30px;
+    border-radius: 50px;
+    
 }
 
 
@@ -74,9 +77,53 @@ section .card{
     display: flex;
     border-radius: 10px;
     padding: 1rem;
-    background-color: rgb(255, 176, 176);
+    background-color: rgb(255, 254, 254);
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 5px;
 
+}
+
+.add-btn {
+font-size:36px;
+width: 70px;
+height: 50px;
+color: rgb(32, 118, 203);
+
+
+
+
+}
+
+button#delete-btn{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+span.add-icon{
+    color: dodgerblue;
+    background-color: #d0edef;
+
+}
+
+span.delete-icon{
+
+     cursor: pointer;
+     color: white; 
+     
+
+}
+
+#stats{
+    margin-top: 30px;
+}
+
+.first{
+    color: green;
+}
+
+.second{
+    color: blue;
 }
