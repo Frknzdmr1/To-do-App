@@ -26,13 +26,19 @@ h1#title{
     text-align: center;
 }
 
-form#add-todo, section#todos-list{
+form#add-form, section#todos-list{
     margin-top: 20px;
     padding: 2rem;
     width: 80%;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0.4);
- 
+}
+
+form#add-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue;
 }
 
 form input{
@@ -84,18 +90,20 @@ section .card{
 
 }
 
-.add-btn {
-font-size:36px;
+button.delete-btn, button#add-btn {
+/* font-size:36px;
 width: 70px;
 height: 50px;
-color: rgb(32, 118, 203);
-
-
-
+color: rgb(32, 118, 203); */
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+border: none;
 
 }
 
-button#delete-btn{
+button.delete-btn{
     background-color: red;
     width: 40px;
     height: 40px;
@@ -103,15 +111,17 @@ button#delete-btn{
 }
 
 span.add-icon{
-    color: dodgerblue;
-    background-color: #d0edef;
+    color: rgb(226, 229, 232);
+    background-color: #3353d4;
 
 }
 
 span.delete-icon{
 
      cursor: pointer;
-     color: white; 
+     color: rgb(234, 234, 234);
+     background-color: red;
+    
      
 
 }
